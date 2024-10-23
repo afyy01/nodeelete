@@ -78,5 +78,5 @@ print("inorder traversal before deleting:")
 inordertraversal(root)
 
 root = delete (root, 70)
-print = ("inorder traversal after deleting: ")
+print("inorder traversal after deleting: ")
 inordertraversal(root)
