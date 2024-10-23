@@ -53,13 +53,13 @@ def findmin(node):
     current = node
     while current.left is None:
         current = current.left
-        return current
+    return current
     
 #inorder traversal(prints the node in sorted order)
 def inordertraversal(root):
     if root:
         inordertraversal(root.left)
-        print(root.val, end = "-")
+        print(root.val, end = " - ")
         inordertraversal(root.right)
 
 #usage
@@ -74,7 +74,6 @@ root = insert(root,70)
 root = insert(root,80)
 
 print("inorder traversal before deleting:")
-
 inordertraversal(root)
 
 root = delete (root, 70)
